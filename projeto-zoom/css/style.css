@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"cabecalho cabecalho"
+		"conteudo imagem"
+		"organizacao-imagem organizacao-conteudo";
+	row-gap: 20px;
+	column-gap: 20px;
+	padding: 15px;
+}
+
+header {
+	grid-area: cabecalho;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+}
+
+section#conteudo {
+	grid-area: conteudo;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+section#imagem {
+	grid-area: imagem;
+}
+section#organizacao-imagem {
+	grid-area: organizacao-imagem;
+}
+
+section#imagem > img,
+section#organizacao-imagem > img {
+	max-width: 100%;
+}
+
+section#organizacao-conteudo {
+	grid-area: organizacao-conteudo;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+nav {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+
+nav ul a:link,
+nav ul a:visited {
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #484848;
+	font-size: 1.2rem;
+}
+nav ul a:hover {
+	color: #0b5cff;
+}
+
+.botao {
+	text-decoration: none;
+	color: #0b5cff;
+	border: 2px solid #0b5cff;
+	border-radius: 25px;
+	padding: 5px 20px;
+	align-self: flex-start;
+}
+
+.botao:hover {
+	background-color: #d2e1ff;
+}
+
+.botao.destaque {
+	background-color: #0b5cff;
+	color: #fff;
+}
+.botao.destaque:hover {
+	background-color: #2d73ff;
+	color: #fff;
+}
+
+footer {
+	background: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Tipografia */
+
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 50px;
+}
+h2 {
+	font-size: 1.8rem;
+	margin-bottom: 50px;
+}
+h3 {
+	font-size: 1.2rem;
+	margin: 20px 0;
+}
+
+#conteudo p {
+	margin-bottom: 20px;
+}
+
+#organizacao-conteudo p {
+	margin-bottom: 20px;
+}
+
+.texto-destaque {
+	color: #2d73ff;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"cabecalho"
+			"conteudo"
+			"imagem"
+			"organizacao-conteudo"
+			"organizacao-imagem";
+	}
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	header a {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+	h2 {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+}
