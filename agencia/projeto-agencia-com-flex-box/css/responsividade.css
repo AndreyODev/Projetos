@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+	/* CONTAINER */
+	#container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	/* NAVBAR */
+	.navBar {
+		position: relative;
+		width: 100%;
+		justify-content: center;
+		padding: 20px 0;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.logo {
+		flex: 100%;
+		text-align: center;
+		margin: 0;
+	}
+
+	.contato {
+		display: none;
+	}
+
+	/* HEADLINE */
+	.header {
+		padding-top: 50px;
+	}
+
+	.headline {
+		flex-basis: 100%;
+		margin: 5%;
+		text-align: center;
+	}
+
+	.headline p {
+		text-align: center;
+		padding-right: 0;
+	}
+	.headline h2 {
+		padding-top: 50px;
+		padding-right: 0;
+	}
+
+	/* IMAGEM DA HEADLINE */
+	.img-headline {
+		flex-basis: 100%;
+		margin: 5% 0;
+		text-align: center;
+	}
+
+	.img-headline img {
+		width: 100%;
+	}
+
+	/* CARDS */
+	.card {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	/* WHATSAPP */
+	.whats {
+		display: none;
+	}
+}
