@@ -22,20 +22,21 @@ header {
 	grid-template-columns: 1fr 600px;
 	gap: 10%;
 	z-index: 2;
-	border: 1px solid red;
 
-	& img {
-		width: 250px;
-		border: 1px solid red;
+	& .logo {
+		text-decoration: none;
+		color: #ffffff;
+		padding-top: 10px;
+		font-family: "League Gothic", sans-serif;
+		font-size: 1.2rem;
+		font-size: 2rem;
 	}
 
 	& nav {
-		border: 1px solid blue;
 		margin: auto 0;
 		& ul {
 			display: grid;
 			grid-template-columns: repeat(3, 200px);
-			border: 1px solid green;
 
 			& li {
 				& a {
@@ -48,17 +49,15 @@ header {
 }
 
 section {
-	background: radial-gradient(#470964, #791fd3);
+	background: radial-gradient(circle at top, #1e293b, #020617);
 	height: 100vh;
 	position: relative;
-	border: 5px solid green;
 
 	& .lista {
 		width: 70vw;
 		height: 100%;
 		margin: auto;
 		position: relative;
-		border: 1px solid pink;
 
 		& .item {
 			position: absolute;
@@ -69,7 +68,6 @@ section {
 				top: 50%;
 				transform: translateY(-50%);
 				width: 70%;
-				border: 1px solid red;
 
 				& img {
 					width: 89%;
@@ -84,7 +82,7 @@ section {
 					height: 100px;
 					top: 150%;
 					left: 50px;
-					border: 50%;
+					border-radius: 50%;
 					filter: blur(50px);
 				}
 			}
@@ -99,7 +97,6 @@ section {
 				justify-content: center;
 				align-items: flex-end;
 				gap: 20px;
-				border: 1px solid green;
 
 				& .car-information {
 					font-weight: bold;
@@ -124,7 +121,6 @@ section {
 					height: 35px;
 					width: 120px;
 					text-transform: uppercase;
-					border: 2px solid #791fd3;
 					background: #beff1b;
 					color: #000;
 					cursor: pointer;
@@ -162,7 +158,7 @@ section {
 			width: 50px;
 			height: 50px;
 			border-radius: 50%;
-			border: none;
+			opacity: none;
 			cursor: pointer;
 
 			& img {
@@ -188,7 +184,6 @@ section {
 		flex-direction: column;
 		justify-content: flex-end;
 		gap: 15px;
-		/* border: 1px solid orange; */
 
 		& .numero {
 			font-size: 5em;

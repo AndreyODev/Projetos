@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: linear-gradient(#b3e7b6, #0b6310);
+	color: var(--text-color);
+}
+
+.max_width {
+	width: 100%;
+	max-width: 1024px;
+}

@@ -1,0 +1,81 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	z-index: 100;
+	border: 1px solid red;
+}
+.navbar .navbar__content {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 100;
+	transition: all 0.8s ease;
+	border: 1px solid blue;
+}
+.navbar .navbar__content .navbar__links {
+	display: flex;
+	border: 1px solid blue;
+}
+.navbar .navbar__content .navbar__links {
+	display: flex;
+	border: 1px solid blue;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+	border: 1px solid green;
+}
+
+.navbar__links a {
+	display: inline-block;
+	margin: 0 25px;
+	font-size: var(--p-font);
+	font-weight: 500;
+	color: var(--text-color);
+	transition: all 0.8s ease;
+}
+.navbar__links a:hover {
+	color: var(--main-color);
+}
+
+.navbar__right-h {
+	display: flex;
+	align-items: center;
+	border: 1px solid green;
+}
+
+.btn-r {
+	display: inline-block;
+	padding: 12px 28px;
+	color: var(--second-color);
+	background: var(--text-color);
+	border-width: 1px 3px 3px 1px;
+	border-style: solid;
+	border-color: var(--main-color);
+	border-radius: 30px;
+	margin: 0 25px;
+	font-size: var(--p-font);
+	font-weight: 400;
+	transition: all 0.7s ease;
+}
+.btn-r:hover {
+	color: var(--main-color);
+	transform: scale(1.1);
+}
+
+#menu-icon {
+	font-size: 35px;
+	z-index: 101;
+	cursor: pointer;
+	display: none;
+}
+
+.navbar.sticky {
+	background: transparent;
+	backdrop-filter: blur(30px);
+}
