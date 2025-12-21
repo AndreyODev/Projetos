@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Álcool ou Gasolina</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<h2 class="title">É melhor utilizar Álcool ou Gasolina?</h2>
+			<form>
+				<div class="field">
+					<label for="alcool">Preço do álcool</label>
+					<input id="alcool" type="text" placeholder="Digite o preço do álcool (ex: 2.20)" />
+				</div>
+
+				<div class="field">
+					<label for="gasolina">Preço da gasolina</label>
+					<input
+						id="gasolina"
+						type="text"
+						placeholder="Digite o preço da gasolina (ex: 3.50)"
+						class="form-control"
+					/>
+				</div>
+
+				<div class="resultado">resultado</div>
+
+				<button onclick="calcular()" type="button" class="btn">Calcular</button>
+			</form>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
