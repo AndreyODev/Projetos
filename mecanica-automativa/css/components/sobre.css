@@ -1,0 +1,53 @@
+.conteiner {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+}
+.imagem img {
+	width: 600px;
+	height: 600px;
+	margin-right: 30px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 30px;
+}
+
+.conteudo {
+	width: 50%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 30px;
+}
+.h3 {
+	color: brown;
+	margin: 0;
+}
+.titulo {
+	margin: 0;
+	padding: 0;
+	color: var(--cor-primary);
+	font-size: 3.5em;
+}
+.paragrafo {
+	line-height: 1.6;
+	font-size: 20.9px;
+	color: #000000;
+	text-align: justify;
+}
+.itens {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-top: 30px;
+}
+.item {
+	width: 45%;
+	color: #000000;
+}
+.item img {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: 5px;
+	right: 2px;
+}

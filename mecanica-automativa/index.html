@@ -5,31 +5,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="css/styles.css" />
-		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- Google Fonts - Poppins/Inter -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- Remix Icon -->
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
 	<body>
+		<!-- Navbar -->
 		<nav id="nav" class="padding-lateral">
 			<!-- <a class="logo" href="#"><img src="assets/logo.png" alt="Auto Center Premium" /></a> -->
 			<a class="logo" href="#">Auto Center Premium</a>
 			<ul>
-				<li><a href="#">Início</a></li>
-				<li><a href="#">Sobre</a></li>
+				<li><a href="#header">Início</a></li>
+				<li><a href="#sobre">Sobre</a></li>
 				<li><a href="#">Serviços</a></li>
-				<li><a href="#">Galeria</a></li>
+				<li><a href="#diferenciais">Diferencias</a></li>
 				<li><a href="#">Depoimentos</a></li>
 				<li><a href="#">FAQ</a></li>
 				<li><a href="#">Contato</a></li>
 			</ul>
 		</nav>
+		<!-- / Navbar -->
+		<!-- Header -->
 		<header id="header" class="padding-lateral">
+			<!-- Header__left -->
 			<div id="header__left">
 				<h1>Oficina Mecânica de <span>Confiança</span></h1>
 				<p>Mais de 20 anos cuidando do seu veículo com execelência, segurança e garatia total</p>
@@ -37,7 +42,7 @@
 					<a class="btn destaque" href="#">Entre em Contato</a>
 					<a class="btn" href="#">Nossos Serviços</a>
 				</div>
-
+				<!-- Indicadores -->
 				<div class="indicadores">
 					<div class="indicador">
 						<i class="ri-car-fill"></i>
@@ -61,10 +66,84 @@
 						</div>
 					</div>
 				</div>
+				<!-- / Indicadores -->
 			</div>
+			<!-- / Header__left -->
 			<div id="header__right">
 				<!-- <img src="assets/mecanico.jpeg" alt="" /> -->
 			</div>
 		</header>
+		<!-- / Header -->
+		<!-- Sobre -->
+		<section id="sobre" class="conteiner padding-lateral">
+			<div class="imagem">
+				<img src="assets/oficina.jpeg" alt="" />
+			</div>
+			<div class="conteudo">
+				<h3 class="h3">QUEM SOMOS</h3>
+				<h1 class="titulo">A Melhor Oficina para seu Veiculo</h1>
+				<p class="paragrafo">
+					Somos uma oficina mecânica especializada com mais de 20 anos de experiência no mercado automotivo.
+					Nossa missão é oferecer serviços de alta qualidade com transparência honestidade e compromisso com a
+					satisfação do cliente.
+				</p>
+				<p class="paragrafo">
+					Contamos com uma equipe de proficionais altamente qualificados e certificados, equipamentos de
+					ultima geração e ultilizamos apenas peças originas ou de primeira linha, garantindo a seguraça e
+					durabilidade dos reparos.
+				</p>
+
+				<div class="itens">
+					<div class="item"><img src="assets/verificar.png" alt="correto" /> Equipe Técnica Certificada</div>
+					<div class="item"><img src="assets/verificar.png" alt="correto" /> Equipamentos Modernos</div>
+					<div class="item"><img src="assets/verificar.png" alt="correto" /> Peças Originas</div>
+					<div class="item"><img src="assets/verificar.png" alt="correto" /> Atendimento Personalizado</div>
+				</div>
+			</div>
+		</section>
+		<!-- / Sobre -->
+
+		<!-- Diferenciais -->
+		<section id="diferenciais">
+			<p class="title">Por que nos escolher</p>
+			<h2 class="diferenciais-heading">Nossos Diferenciais</h2>
+
+			<div class="diferenciais-list">
+				<article class="diferencial-card">
+					<i class="icon ri-graduation-cap-fill"></i>
+
+					<h2 class="certificados">Técnicos Certificados</h2>
+
+					<p>Profissionais qualificados e em constante atualização com as últimas tecnologias automotivas.</p>
+				</article>
+
+				<article class="diferencial-card">
+					<i class="icon ri-tools-fill"></i>
+					<h2 class="certificados">Peças Originais</h2>
+
+					<p>
+						Utilizamos apenas peças originais ou de primeira linha para garantir qualidade e durabilidade.
+					</p>
+				</article>
+
+				<article class="diferencial-card">
+					<i class="icon ri-shield-check-fill"></i>
+
+					<h2 class="certificados">Garantia Total</h2>
+
+					<p>Todos os nossos serviços possuem garantia, proporcionando tranquilidade e segurança.</p>
+				</article>
+
+				<article class="diferencial-card">
+					<i class="icon ri-money-dollar-circle-fill"></i>
+
+					<h2 class="certificados">Orçamento Grátis</h2>
+
+					<p>Avaliação completa e orçamento sem compromisso para todos os serviços.</p>
+				</article>
+			</div>
+		</section>
+		<!-- / Diferenciais -->
+		<script src="js/script.js"></script>
 	</body>
 </html>

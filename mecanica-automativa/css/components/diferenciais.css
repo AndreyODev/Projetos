@@ -1,0 +1,63 @@
+body {
+	color: white;
+	background-color: #294b78;
+	font-family: "poppins", sans-serif;
+}
+
+#diferenciais {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #294b78;
+	color: white;
+}
+
+.title {
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+	font-weight: 500;
+}
+
+.diferenciais-heading {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: var(--font-36);
+}
+
+.certificados {
+	margin-top: 20px;
+	margin-bottom: 22px;
+	font-size: 24px;
+}
+
+.diferenciais-list {
+	display: flex;
+	text-align: center;
+	gap: 40px;
+	margin: 0 auto;
+}
+
+.diferencial-card {
+	width: 230px;
+	height: 320px;
+	border: 2px solid #59779e;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: rgba(223, 223, 223, 0.1);
+}
+
+.diferencial-card .icon {
+	color: white;
+	background: var(--cor-secondary);
+	border-radius: 50%;
+	padding: 10px;
+	font-size: 40px;
+}
+
+.diferencial-card p {
+	font-size: 12px;
+	font-weight: 300;
+}

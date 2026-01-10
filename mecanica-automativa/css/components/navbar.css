@@ -33,6 +33,10 @@ ul a {
 	color: var(--cor-primary);
 }
 
+.sombra {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+}
+
 /* Responsividade */
 @media (max-width: 1024px) {
 	nav {
