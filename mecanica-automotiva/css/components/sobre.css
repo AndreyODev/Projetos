@@ -4,13 +4,39 @@
 	align-items: center;
 	background: #ffffff;
 }
-.imagem img {
+.imagem {
 	width: 600px;
 	height: 600px;
 	margin-right: 30px;
 	background-size: cover;
 	background-position: center;
+	background: url(../../assets/oficina.jpeg);
 	border-radius: 30px;
+	position: relative;
+}
+.sobre-destaque {
+	text-align: center;
+	margin-left: 50px;
+	border: 1px solid red;
+	display: inline-block;
+	width: 150px;
+	height: 100px;
+	background: var(--cor-secondary);
+	border-radius: 10px;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.sobre-destaque span {
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 900;
+	display: block;
+}
+.sobre-destaque i {
+	display: inline-block;
+	margin-top: 15px;
+	font-size: 40px;
 }
 
 .conteudo {
